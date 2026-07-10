@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adlsdevdubyproject27"
+		},
+		"LS_ADLS_BLOB_accountKey": {
+			"value": ""
+		},
+		"LS_BinaryTXT_connectionString": {
+			"value": ""
+		},
+		"LS_CSV_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_DATA_TO_BLOB_accountKey": {
+			"value": ""
+		},
+		"LS_INPUT_BLOB_ADLS_connectionString": {
+			"value": ""
+		},
+		"LS_METADATA_accountKey": {
+			"value": ""
+		},
+		"LS_OUTPUT_BINARY_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_MIGRATION_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"LS_ADLS_BLOB_properties_typeProperties_url": {
+			"value": "https://adlsdubyproject27.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdubyproject27.dfs.core.windows.net/"
+		},
+		"LS_DATA_TO_BLOB_properties_typeProperties_url": {
+			"value": "https://adlsdubyproject27.dfs.core.windows.net/"
+		},
+		"LS_METADATA_properties_typeProperties_url": {
+			"value": "https://adlsdubyproject27.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_BINARY_properties_typeProperties_url": {
+			"value": "https://adlsdubyproject27.dfs.core.windows.net/"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_server": {
+			"value": "LAPTOP-O1T697AQ\\SQLEXPRESS"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_database": {
+			"value": "visionboard"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_userName": {
+			"value": "Sonu"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "LAPTOP-O1T697AQ\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "visionboard"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "Sonu"
+		}
+	}
+}
