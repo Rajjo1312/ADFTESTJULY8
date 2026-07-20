@@ -55,7 +55,7 @@
 					},
 					"ifTrueActivities": [
 						{
-							"name": "COPYSQL_FULLINC",
+							"name": "COPYSQL_FULL_INCTLOAD_TABLES",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -94,7 +94,7 @@
 							"type": "ExecutePipeline",
 							"dependsOn": [
 								{
-									"activity": "COPYSQL_FULLINC",
+									"activity": "COPYSQL_FULL_INCTLOAD_TABLES",
 									"dependencyConditions": [
 										"Succeeded"
 									]
