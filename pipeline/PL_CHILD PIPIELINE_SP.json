@@ -1,6 +1,53 @@
 {
 	"name": "PL_CHILD PIPIELINE_SP",
 	"properties": {
+		"activities": [
+			{
+				"name": "SP_UPDATE_WTRMARK",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[UpdateWatermark]",
+					"storedProcedureParameters": {
+						"TableSchema": {
+							"value": "",
+							"type": "String"
+						},
+						"TableName": {
+							"value": "",
+							"type": "String"
+						},
+						"WatermarkColumn": {
+							"value": "",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_ONPREM_SQLSERVER_DW",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"TableSchema": {
+				"type": "string"
+			},
+			"TableName": {
+				"type": "string"
+			},
+			"WatermarkColumn": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
