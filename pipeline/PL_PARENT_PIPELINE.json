@@ -1,5 +1,5 @@
 {
-	"name": "PL_PARENT PIPELINE",
+	"name": "PL_PARENT_PIPELINE",
 	"properties": {
 		"activities": [
 			{
@@ -48,6 +48,7 @@
 						"value": "@activity('LKUP_SQLTABLE_WATERMARK_DW').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "EXEC_SQL_INCREMENTAL",
@@ -59,7 +60,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "PL_CHILD PIPELINE_INCR",
+									"referenceName": "PL_CHILD_PIPELINE_INCR",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true,
