@@ -1,5 +1,5 @@
 {
-	"name": "PL_CHILD PIPELINE_INCR",
+	"name": "PL_CHILD_PIPELINE_INCR",
 	"properties": {
 		"activities": [
 			{
@@ -32,10 +32,13 @@
 								"value": "@pipeline().parameters.TableSchema",
 								"type": "Expression"
 							},
-							"TableName": "@Pipeline().Parameter.Tablename"
+							"TableName": {
+								"value": "@pipeline().parameters.TableName",
+								"type": "Expression"
+							}
 						}
 					},
-					"firstRowOnly": false
+					"firstRowOnly": true
 				}
 			},
 			{
@@ -138,7 +141,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "PL_CHILD PIPIELINE_SP",
+									"referenceName": "PL_CHILD_PIPIELINE_SP",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true,
@@ -148,11 +151,11 @@
 										"type": "Expression"
 									},
 									"TableName": {
-										"value": "@Pipeline().parameters.TableName",
+										"value": "@pipeline().parameters.TableName",
 										"type": "Expression"
 									},
 									"WatermarkColumn": {
-										"value": "@Pipeline().parameters.WatermarkColumn",
+										"value": "@pipeline().parameters.WatermarkColumn",
 										"type": "Expression"
 									}
 								}
