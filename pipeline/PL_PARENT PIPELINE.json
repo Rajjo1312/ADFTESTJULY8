@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "LKUP_SQLTABLE_WATERMARK DW",
+				"name": "LKUP_SQLTABLE_WATERMARK_DW",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -36,7 +36,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "LKUP_SQLTABLE_WATERMARK DW",
+						"activity": "LKUP_SQLTABLE_WATERMARK_DW",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('LKUP_SQLTABLE_WATERMARK DW').output.value",
+						"value": "@activity('LKUP_SQLTABLE_WATERMARK_DW').output.value",
 						"type": "Expression"
 					},
 					"activities": [
