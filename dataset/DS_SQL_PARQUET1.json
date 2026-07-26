@@ -23,7 +23,7 @@
 					"value": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),\n'yyyy/MM/dd'))",
 					"type": "Expression"
 				},
-				"fileSystem": "Retaildw"
+				"fileSystem": "migrationproject001"
 			},
 			"compressionCodec": "snappy"
 		},
